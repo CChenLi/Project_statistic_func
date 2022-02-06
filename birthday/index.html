@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <title>Document</title>
+
+    <script>
+        ps=new Array("img1.png","img2.png");
+        var i=0;
+        function update_img() {
+            i++;
+        if(i>=ps.length) { i=0; }
+        document.getElementById("tu").src=ps[i];
+        }
+        setInterval(update_img,2000);
+    </script>
+
+    <style>
+        .artpad {
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+        }
+        .title {
+            font-size: larger;
+            color: pink;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .end-title {
+            font-size: medium;
+            color: pink;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="artpad">
+        <div class="title">JunJun生日快乐</div>
+        <img src="img1.png" id="tu" width=400px height=533px></img>
+        <div class="end-title">任何时候打开这个链接都要知道Chenchen最爱你哦</div>
+    </div>
+    
+</body>
+</html>
